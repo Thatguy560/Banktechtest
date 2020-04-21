@@ -1,7 +1,7 @@
 require 'bankaccount'
-require 'transactions'
+require 'transaction'
 describe Bankaccount do
-  subject(:bankaccount) { described_class.new }
+  let(:bankaccount) { Bankaccount.new }
   
   context "creates a new bank account" do 
     it "has a default balance of 0" do 
@@ -23,5 +23,18 @@ describe Bankaccount do
       expect(subject.balance).to eq(2500)
     end
   end
+  
+  context "when depositing a negative amount" do
+    it "will raise an error message" do 
+      expect { subject.deposit(-500) }.to raise_error "Cannot deposit a negative amount"
+    end
+  end
+
+  context "when withdrawing a negative amount" do
+    it "will raise an error message" do 
+      expect { subject.withdrawal(-500) }.to raise_error "Cannot withdraw a negative amount"
+    end
+  end
 end
+
 
