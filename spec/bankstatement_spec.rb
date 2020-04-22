@@ -1,4 +1,4 @@
-require 'bank_statement'
+require 'bankstatement'
 
 describe Bankstatement do 
   

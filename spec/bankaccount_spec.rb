@@ -1,5 +1,5 @@
 require 'bankaccount'
-require 'transaction'
+# require 'transaction'
 describe Bankaccount do
   let(:bankaccount) { Bankaccount.new(transaction) }
   let(:transaction) { double :transaction }
