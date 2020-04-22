@@ -4,8 +4,6 @@
 
 Taken from https://github.com/makersacademy/course/blob/master/individual_challenges/bank_tech_test.md
 
-Requirements
-
 You should be able to interact with your code via a REPL like IRB or the JavaScript console. (You don't need to implement a command line interface that takes input from STDIN.)
 Deposits, withdrawal.
 Account statement (date, amount, balance) printing.
@@ -16,7 +14,7 @@ I added some additional functionality and edge cases for example:
 - You can't make a negative deposit
 - You can withdraw more than what you've got saved in your balance
 
-**User Stories**
+# User Stories
 
 - As a user 
 So I would like to be able to store money
@@ -38,10 +36,17 @@ I'd like to view able to view my balance
   so I can see a list of transactions I've made
   I'd like to be able to print my bank statement
 
-**Running the program in irb**
+# Using the program and running in irb
 
+$ 
 - Type in irb in commandline followed by require './lib/bankaccount.rb'
-- Instantiate a new instance type in bankaccount = Bankaccount.new
+- Instantiate a new instance of the bank class with bankaccount = Bankaccount.new
+- To make a deposit type in - bankaccount.deposit(100)
+- To make a withdrawal type in - bankaccount.withdraw(100)
+- To find out the balance at any point type in - bankaccount.balance
+- To print out the whole bank statement type in - bankaccount.print_statement
+
+# Process
 
 
 # Acceptance criteria

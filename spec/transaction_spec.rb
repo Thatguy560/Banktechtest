@@ -1,46 +1,28 @@
 require 'transaction'
 
 describe Transaction do 
-
-  context "Transaction type" do
-    it "returns the transaction type if deposit." do 
-      deposit = Transaction.new("Deposit", 500)
-      expect(deposit.transaction_type).to eq("Deposit")
+  
+  context "credit transaction" do 
+    it "makes a deposit" do 
+      transaction = Transaction.new(200, nil, 500)
+      expect(transaction.credit).to eq(200)
+      expect(transaction.debit).to eq(nil)
+      expect(transaction.current_balance).to eq(500)
+      expect(transaction.date).to eq(Time.now.strftime("%d/%m/%Y"))
     end
   end
-
-  context "Transaction amount" do
-    it "returns the transaction amount if deposit." do 
-      deposit = Transaction.new("Deposit", 500)
-      expect(deposit.amount).to eq(500)
+  
+  context "debit transaction" do 
+    it "makes a withdrawal" do 
+      transaction = Transaction.new(nil, 100, 400)
+      expect(transaction.credit).to eq(nil)
+      expect(transaction.debit).to eq(100)
+      expect(transaction.current_balance).to eq(400)
+      expect(transaction.date).to eq(Time.now.strftime("%d/%m/%Y"))
     end
   end
+end
 
-  context "Other transaction type" do
-    it "returns the transaction type if withdrawal." do 
-      withdraw = Transaction.new("Withdrawal", 100)
-      expect(withdraw.transaction_type).to eq("Withdrawal")
-    end
-  end
 
-  context "Other transaction amount" do
-    it "returns the transaction amount if withdrawal." do 
-      withdraw = Transaction.new("Withdrawal", 100)
-      expect(withdraw.amount).to eq(100)
-    end
-  end
+ 
 
-  context "it returns the date of when the deposit was created." do 
-    it "should return the date of whrn the transaction was made on" do 
-      deposit = Transaction.new("Deposit", 500)
-      expect(deposit.date).to eq(Time.now.strftime("%d/%m/%Y"))
-    end
-  end
-
-  context "it returns the date of when the withdrawal was created." do 
-    it "should return the date of whrn the transaction was made on" do 
-      withdraw = Transaction.new("Withdrawal", 100)
-      expect(withdraw.date).to eq(Time.now.strftime("%d/%m/%Y"))
-    end
-  end
-end 

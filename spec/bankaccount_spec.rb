@@ -3,6 +3,7 @@ require 'bankaccount'
 describe Bankaccount do
   let(:bankaccount) { Bankaccount.new(transaction) }
   let(:transaction) { double :transaction }
+  let(:bankstatement) { double :bankstatement }
   
   context "creates a new bank account" do 
     it "has a default balance of 0" do 
@@ -44,11 +45,20 @@ describe Bankaccount do
     end
   end
 
-  # context "transaction history array" do 
-  #   it "will include transactions" do 
-  #     expect(subject.transaction_history).to include transaction
-  #   end
-  # end
+  context "transaction history array" do 
+    it "will include deposit transactions" do 
+      subject.deposit(500)
+      expect(subject.transaction_history).to include transaction
+    end
+  end
+
+  context "transaction history array" do 
+    it "will include withdrawal transactions" do
+      subject.deposit(501)
+      subject.withdraw(500)
+      expect(subject.transaction_history).to include transaction
+    end
+  end
 end
 
 
