@@ -24,15 +24,15 @@ class Bankaccount
   end
 
   def withdraw(amount)
-		raise "Cannot withdraw a negative amount" if amount < 0
-		raise "Cannot withdraw more than in the bank account" if (@balance - amount) < 0
+    raise "Cannot withdraw a negative amount" if amount < 0
+    raise "Cannot withdraw more than in the bank account" if (@balance - amount) < 0
     decrease_balance(amount)
     debit = debit_transaction(amount)
     save_transaction(debit)
   end
 
-	def print_statement
-		@bankstatement.print_statement(@transaction_history) 
+  def print_statement
+    @bankstatement.print_statement(@transaction_history) 
   end
 
   private
