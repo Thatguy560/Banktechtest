@@ -4,9 +4,9 @@ require_relative 'helpermethods'
 class Bankaccount
   attr_reader :balance, :transaction_history 
   
-  DEFAULT_BALANCE = 0
+  STARTING_BALANCE = 0
   def initialize(transaction = Transaction, bankstatement = Bankstatement.new)
-    @balance = DEFAULT_BALANCE
+    @balance = STARTING_BALANCE
     @transaction_history = [] 
     @transaction = transaction
     @bankstatement = bankstatement
