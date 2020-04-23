@@ -1,5 +1,3 @@
-# These have been added in to help keep code in other files shorter.
-
 def increase_balance(amount)
   @balance += amount
 end

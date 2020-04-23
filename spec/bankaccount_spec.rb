@@ -61,4 +61,3 @@ describe Bankaccount do
   end
 end
 
-# The last two tests don't currently work.
