@@ -45,14 +45,14 @@ describe Bankaccount do
     end
   end
 
-  context "The transaction history array" do 
+  context "The 'transaction history' array" do 
     it "will include deposit transactions" do 
       subject.deposit(500)
       expect(subject.transaction_history.length).to eq 1
     end
   end
 
-  context "The transaction history array" do 
+  context "The 'transaction history' array" do 
     it "will include deposit and withdrawal transactions" do
       subject.deposit(501)
       subject.withdraw(500)
