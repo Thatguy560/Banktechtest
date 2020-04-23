@@ -1,9 +1,10 @@
 require 'bankaccount'
 # require 'transaction'
 describe Bankaccount do
-  let(:bankaccount) { Bankaccount.new(transaction) }
-  let(:transaction) { double :transaction }
+  let(:bankaccount) { Bankaccount.new(transaction, bankstatement) }
   let(:bankstatement) { double :bankstatement }
+  let(:transaction1) { Transaction.new(500, 0, 500) }
+  let(:transaction2) { Transaction.new(501, 500, 1) }
   
   context "creates a new bank account" do 
     it "has a default balance of 0" do 
@@ -48,7 +49,7 @@ describe Bankaccount do
   context "transaction history array" do 
     it "will include deposit transactions" do 
       subject.deposit(500)
-      expect(subject.transaction_history).to include transaction
+      expect(subject.transaction_history).to include transaction1
     end
   end
 
@@ -56,9 +57,9 @@ describe Bankaccount do
     it "will include withdrawal transactions" do
       subject.deposit(501)
       subject.withdraw(500)
-      expect(subject.transaction_history).to include transaction
+      expect(subject.transaction_history).to include transaction2
     end
   end
 end
 
-
+# The last two tests don't currently work.
