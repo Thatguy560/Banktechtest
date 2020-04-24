@@ -65,7 +65,6 @@
           null,
           null,
           null,
-          null,
           null
         ]
       },
@@ -117,8 +116,6 @@
           1,
           2,
           null,
-          null,
-          null,
           null
         ]
       },
@@ -163,8 +160,6 @@
       },
       "/Users/student/Projects/Week10/Banktechtest/lib/helpermethods.rb": {
         "lines": [
-          null,
-          null,
           1,
           4,
           null,
@@ -252,6 +247,6 @@
         ]
       }
     },
-    "timestamp": 1587658091
+    "timestamp": 1587720988
   }
 }

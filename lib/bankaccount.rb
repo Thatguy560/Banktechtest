@@ -3,11 +3,11 @@ require_relative 'bankstatement'
 require_relative 'helpermethods'
 class Bankaccount
   attr_reader :balance, :transaction_history 
-  
+
   STARTING_BALANCE = 0
   def initialize(transaction = Transaction, bankstatement = Bankstatement.new)
     @balance = STARTING_BALANCE
-    @transaction_history = [] 
+    @transaction_history = []
     @transaction = transaction
     @bankstatement = bankstatement
   end
@@ -32,18 +32,16 @@ class Bankaccount
   end
 
   def print_statement
-    @bankstatement.print_statement(@transaction_history) 
+    @bankstatement.print_statement(@transaction_history)
   end
 
   private
 
   def credit_transaction(amount)
     new_deposit(amount)
-  end 				
+  end
 
   def debit_transaction(amount)
     new_withdrawal(amount)
   end
 end
-
-

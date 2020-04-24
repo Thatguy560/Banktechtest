@@ -10,21 +10,21 @@ Account statement (date, amount, balance) printing.
 Data can be kept in memory (it doesn't need to be stored to a database or anything).
 
 I added some additional functionality and edge cases for example:
-- You can't make a negative withdrawal 
+- You can't make a negative withdrawal
 - You can't make a negative deposit
 - You can withdraw more than what you've got saved in your balance
 
 # User Stories
 
-- As a user 
+- As a user
 So I would like to be able to store money
 I'd like be able to make deposits to my bank account
 
-- As a user 
+- As a user
 So I would access my savings
 I'd like to be able to make a withdrawal from my bank account.
 
-- As a user 
+- As a user
 So I can see the time I made a deposit or withdrawal
 I'd like to be able to see the date I made a transaction
 
@@ -41,6 +41,8 @@ I'd like to view able to view my balance
 $ git clone https://github.com/Thatguy560/Banktechtest.git
 
 $ cd Banktechtest
+
+$ If you want to run tests in the program type in rspec in the command line to check to see if the tests pass or fail and the test coverage.
 
 $ run bundle in commandline
 
@@ -61,22 +63,22 @@ $ To print out the whole bank statement type in - bankaccount.print_statement
 # Process
 
 - Broke down task into user stories and ensured I had the main features working i.e making deposits, withdrawals, can check balance and print the statement at the end.
-- Ensured I didn't put all the functionality into one class 
+- Ensured I didn't put all the functionality into one class
 - Looked back at old notes/instructions from earlier projects
-- Created an additional helper methods class to help keep code slightly more readable 
+- Created an additional helper methods class to help keep code slightly more readable
 
 # Testing Frameworks Used
 
   ## Rubocop, Simplecov, rspec
 
   ## Test Coverage:  98.37% -- 122/124 lines in 7 files
-  
+
 # Example usage
 
  > bankaccount.deposit(50)
 
  > bankaccount.deposit(50)
- 
+
  > bankaccount.deposit(50)
 
  > bankaccount.deposit(50)
@@ -97,4 +99,3 @@ $ To print out the whole bank statement type in - bankaccount.print_statement
 - 23/04/2020 || 50.00 ||  || 150.00
 - 23/04/2020 || 50.00 ||  || 100.00
 - 23/04/2020 || 50.00 ||  || 50.00
-
