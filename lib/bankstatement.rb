@@ -1,11 +1,11 @@
-class Bankstatement 
-  
-  def print_statement(transaction_history)
+class Bankstatement
+
+  def print(transaction_history)
     @transaction_history = transaction_history
     header
     print_transactions
   end
- 
+
   def print_transactions
     transaction_array = @transaction_history.map do |transaction|
       "#{transaction.date} || #{convert_to_2dp(transaction.credit)} || "\
@@ -14,6 +14,3 @@ class Bankstatement
     puts transaction_array.reverse.join("")
   end
 end
-
-
-

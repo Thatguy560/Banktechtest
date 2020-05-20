@@ -56,7 +56,7 @@ $ To make a deposit type in - bankaccount.deposit(100)
 
 $ To make a withdrawal type in - bankaccount.withdraw(100)
 
-$ To find out the balance at any point type in - bankaccount.balance
+$ To find out the balance at any point type in - bankaccount.check_current_balance
 
 $ To print out the whole bank statement type in - bankaccount.print_statement
 
@@ -71,7 +71,7 @@ $ To print out the whole bank statement type in - bankaccount.print_statement
 
   ## Rubocop, Simplecov, rspec
 
-  ## Test Coverage:  98.37% -- 122/124 lines in 7 files
+  ## Test Coverage:  99.23% -- 129/130 lines in 7 files
 
 # Example usage
 
