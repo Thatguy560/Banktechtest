@@ -71,7 +71,7 @@ $ To print out the whole bank statement type in - bankaccount.print_statement
 
   ## Rubocop, Simplecov, rspec
 
-  ## Test Coverage:  99.23% -- 129/130 lines in 7 files
+  ## Test Coverage:  100.00% -- 131/131 lines in 7 files
 
 # Example usage
 
