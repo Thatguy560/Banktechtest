@@ -16,25 +16,31 @@ I added some additional functionality and edge cases for example:
 
 # User Stories
 
-- As a user
+```
+As a user
 So I would like to be able to store money
 I'd like be able to make deposits to my bank account
-
-- As a user
+```
+```
+As a user
 So I would access my savings
 I'd like to be able to make a withdrawal from my bank account.
-
-- As a user
+```
+```
+As a user
 So I can see the time I made a deposit or withdrawal
 I'd like to be able to see the date I made a transaction
-
-- As a user
+```
+```
+As a user
 so I would like to see my current savings
 I'd like to view able to view my balance
-
-- As a user
-  so I can see a list of transactions I've made
-  I'd like to be able to print my bank statement
+```
+```
+As a user
+so I can see a list of transactions I've made
+I'd like to be able to print my bank statement
+```
 
 # Using the program and running in irb
 
@@ -48,7 +54,7 @@ $ run bundle in commandline
 
 $ Type irb in commandline
 
-$ Require './lib/bankaccount.rb'
+$ require './lib/bankaccount.rb'
 
 $ Instantiate a new instance of the bank class with bankaccount = Bankaccount.new
 
