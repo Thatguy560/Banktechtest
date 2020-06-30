@@ -1,5 +1,7 @@
 # Bank tech test
 
+<img src="/Users/student/Projects/Week10/Banktechtest/Assets/Screenshot 2020-06-30 at 16.59.45.png">
+
 **Requirements**
 
 Taken from https://github.com/makersacademy/course/blob/master/individual_challenges/bank_tech_test.md
