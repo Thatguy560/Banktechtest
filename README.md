@@ -1,4 +1,4 @@
-# Bank tech test
+# Bank Tech Test (Ruby)
 
 ![Screenshot](https://raw.githubusercontent.com/Thatguy560/Banktechtest/master/Assets/Screenshot%202020-06-30%20at%2016.59.45.png)
 
