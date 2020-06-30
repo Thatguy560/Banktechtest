@@ -1,6 +1,6 @@
 # Bank tech test
 
-<img src="/Users/student/Projects/Week10/Banktechtest/Assets/Screenshot 2020-06-30 at 16.59.45.png">
+![Screenshot](https://raw.githubusercontent.com/Thatguy560/Banktechtest/master/Assets/Screenshot%202020-06-30%20at%2016.59.45.png)
 
 **Requirements**
 
