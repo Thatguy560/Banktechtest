@@ -84,21 +84,21 @@ $ To print out the whole bank statement type in - bankaccount.print_statement
 # Example usage
 
 ```ruby
- bankaccount.deposit(50)
+- bankaccount.deposit(50)
 
- bankaccount.deposit(50)
+- bankaccount.deposit(50)
 
- bankaccount.deposit(50)
+- bankaccount.deposit(50)
 
- bankaccount.deposit(50)
+- bankaccount.deposit(50)
 
- bankaccount.withdraw(30)
+- bankaccount.withdraw(30)
 
- bankaccount.withdraw(20)
+- bankaccount.withdraw(20)
 
- bankaccount.withdraw(100)
+- bankaccount.withdraw(100)
 
- bankaccount.print_statement
+- bankaccount.print_statement
 
 date || credit || debit || balance
 23/04/2020 ||  || 100.00 || 50.00
