@@ -75,11 +75,13 @@ $ To print out the whole bank statement type in - bankaccount.print_statement
 - Looked back at old notes/instructions from earlier projects
 - Created an additional helper methods class to help keep code slightly more readable
 
-# Testing Frameworks Used
+# Testing Frameworks Used & Test Coverage
 
   ## Rubocop, Simplecov, rspec
 
-  ## Test Coverage:  100.00% -- 131/131 lines in 7 files
+  #### To check test coverage, type in the terminal 'rspec'
+
+  #### Test Coverage:  100.00% -- 131/131 lines in 7 files
 
 # Example usage
 
