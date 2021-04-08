@@ -46,6 +46,7 @@ I'd like to be able to print my bank statement
 
 # Using the program and running in irb
 
+```Ruby
 $ git clone https://github.com/Thatguy560/Banktechtest.git
 
 $ cd Banktechtest
@@ -67,6 +68,7 @@ $ To make a withdrawal type in - bankaccount.withdraw(100)
 $ To find out the balance at any point type in - bankaccount.check_current_balance
 
 $ To print out the whole bank statement type in - bankaccount.print_statement
+```
 
 # Process
 
