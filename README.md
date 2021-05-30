@@ -75,7 +75,6 @@ $ To print out the whole bank statement type in - bankaccount.print_statement
 - Broke down task into user stories and ensured I had the main features working i.e making deposits, withdrawals, can check balance and print the statement at the end.
 - Ensured I didn't put all the functionality into one class
 - Looked back at old notes/instructions from earlier projects
-- Created an additional helper methods class to help keep code slightly more readable
 
 # Testing Frameworks Used & Test Coverage
 

@@ -2,8 +2,12 @@ class Bankstatement
 
   def print(transaction_history)
     @transaction_history = transaction_history
-    header
+    puts "date || credit || debit || balance\n"
     print_transactions
+  end
+
+  def convert_to_2dp(number)
+    number == 0 ? "" : "%.2f" % number
   end
 
   def print_transactions
